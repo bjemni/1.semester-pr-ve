@@ -1,0 +1,136 @@
+/* Initialisering af responsive design start */
+
+* 
+{
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+/* Initialisering af responsive design slut */
+
+/* Styling af header start*/
+
+html {
+    font-family: 'Lucida Sans', sans-serif;
+}
+header {
+    display: flex;
+    background-color:  rgb(193, 206, 179);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h5 {
+    font-weight: 100;
+}
+
+header a {
+    margin-left: 100px;
+    float: right;
+}
+/* Styling af header slut*/
+
+/* Styling menu start*/
+
+.linkmenu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.linkmenu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.linkmenu2 a {
+    padding: 0.5em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.linkmenu2 a:hover {
+    background-color: rgb(193, 206, 179);
+}
+/* Styling menu slut */
+
+.navbar, .navItem {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(176, 197, 178);
+    border: solid 1px white;
+    cursor: pointer;
+}
+
+.navItem{
+    display: none;
+    width: 100%;
+}
+
+/* Styling footer start*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(193, 206, 179);
+    text-align: center;
+    padding: 5px;
+    margin-top: auto;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+/* Styling footer slut*/
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop*/
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

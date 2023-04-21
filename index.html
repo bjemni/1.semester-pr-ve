@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Limit your footprint</title>
+</head>
+<body>
+    <div class="navbar"><img src="images/bars-solid.svg" alt="Menu">
+        <p class="navItem">How to</p>
+        <p class="navItem">Smart design</p>
+        <p class="navItem">Contakt us</p>
+    </div>
+        
+    <h1>Limit your <br> footprints</h1>
+    
+    <div class="tekst">
+        <p class="test">
+            Did you know that Zealand Academy uses 40% less c02 than the average school?
+         </p>
+         <p class="test">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quaerat, quod! Doloremque vitae, delectus ab totam magnam quo? 
+            Blanditiis, veritatis repellendus.
+         </p>
+         <p class="test">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quaerat, quod! Doloremque vitae, delectus ab totam magnam quo? 
+            Blanditiis, veritatis repellendus.
+         </p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+        
+            $(".toggleTekst").click(function (){
+                $(".test").toggle();
+            });
+            $(".boxButton").click(function() {
+                $(".box1").fadeToggle("slow");
+                $(".box2").fadeToggle("fast");
+                $(".box3").fadeToggle("2000");
+                $(".box4").fadeToggle();
+            });
+        
+            $(".navbar").click(function(){
+                $(".navItem").slideToggle("slow");
+            });           
+        
+        });
+        </script>
+
+</body>
+</html>
