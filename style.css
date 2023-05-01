@@ -1,28 +1,33 @@
-*{
+* {
     background-color: rgb(176, 197, 178);
     color: rgb(255, 255, 255);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.tekst{
+
+.tekst {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    align-items: center;
+    gap: 200px;
     padding-top: 200px;
 }
 
-h1{
-   margin-left: auto;
-   margin-right: auto;
-   text-align: center;
-   margin-top: 100px;
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
 }
 
-p{
+p {
     width: 300px;
 }
 
-button{
+/* button{
     align-items: center;
     width: 10px;
     height: 50px;
@@ -40,8 +45,6 @@ button{
     border: solid 1px white;
     cursor: pointer;
     width: 3%;
-
-
 }
 
 .navItem{
@@ -49,42 +52,187 @@ button{
     width: 100px;
     padding-right: 10rem;
     margin-right: 10rem;
+} */
+
+.menuItem {
+    display: block;
+    margin: 2rem 4rem;
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.menuItem:hover {
+    text-decoration: underline;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: rgb(255, 255, 255) solid 1px;
+    background: rgb(176, 197, 178);
+    cursor: pointer;
+}
+
+#closeIcon {
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgb(176, 197, 178);
+    color: rgb(176, 197, 178);
+    list-style: none;
+    padding-top: 4rem;
+}
+
+.showMenu {
+    transform: translateY(0);
+}
+
+/*FOOTER CONTENT*/
+.footer {
+    width: 100%;
+    min-height: 70px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    grid-area: footer;
+    background-color: rgb(176, 197, 178);
+}
+
+.Kontaktinfo {
+    background-color: none;
+    margin-top: 7px;
+}
+
+.Kontaktinfo a {
+    text-decoration: none;
+    color: black;
+}
+
+.Kontaktinfo a:hover {
+    text-decoration: none;
+    color: gray;
 }
 
 @media only screen and (min-width: 600px) {
+
     /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
 
 }
 
 @media only screen and (min-width: 768px) {
+
     /* For desktop*/
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
 
 
-    h1{
+    h1 {
         font-size: 500%;
     }
 }

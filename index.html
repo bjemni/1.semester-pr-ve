@@ -1,37 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Limit your footprint</title>
 </head>
+
 <body>
-    <div class="navbar"><img src="images/bars-solid.svg" alt="Menu">
-        <p class="navItem">How to</p>
-        <p class="navItem">Smart design</p>
-        <p class="navItem">Contakt us</p>
-    </div>
-        
-    <h1>Limit your <br> footprints</h1>
-    
-    <div class="tekst">
-        <p class="test">
-            Did you know that Zealand Academy uses 40% less c02 than the average school?
-         </p>
-         <p class="test">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quaerat, quod! Doloremque vitae, delectus ab totam magnam quo? 
-            Blanditiis, veritatis repellendus.
-         </p>
-         <p class="test">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quaerat, quod! Doloremque vitae, delectus ab totam magnam quo? 
-            Blanditiis, veritatis repellendus.
-         </p>
-    </div>
+    <h1>Limit your <br> digital footprints</h1>
+
+    <article class="tekst">
+        <section>
+            <h3>Sustainable websites</h3>
+            <p class="test">
+                Where do you imagine all your digital data is stored? Are you aware of the pollution your website is
+                making?
+                Did you know that colors, pictures and the way your website is coded is more or less polluting our
+                globe? Read the following information to understand sustainable web design better.
+            </p>
+        </section>
+
+        <section>
+            <h3>Sustainability is the future</h3>
+            <p class="test">
+                Research shows that we in Denmark think more and more about sustainability. In fact, we are some of the
+                leaders in this field. But how much do we think about digital CO2 footprints? Future multimedia
+                designers are going to have a lot more focus on sustainability when it comes to website design. But how?
+                As a web designer, you will most often be given a task by a customer. The customer knows nothing about
+                what sustainable is in relation to designs. Your task will therefore be to meet the customer's wishes,
+                while keeping the website sustainable. The future is fast approaching, and if you want to be at the top
+                of web designers, I suggest you brand yourself on sustainability. Create integrity by saying no to
+                customers who want polluting websites. Become a trendsetter! Sustainability must become a trend! Use
+                darker and faded colors. Limit your consumption of images and videos. Make sure your page loads in sync
+                with the user's pattern. Remember less is more! Show that sustainability is the new black!
+            </p>
+        </section>
+        <section>
+            <h3>Sustainability around the world</h3>
+            <p class="test">
+                I have researched European digital design companies and asked about their thoughts on digital
+                sustainability. To my dismay, it turns out that none of them have that as their focus. Several hadn’t
+                even heard of digital sustainability at all. And they work with web design on a daily basis! Disaster!  
+                The companies "Your Majesty" and "Clever Franke" said that they cannot insist on sustainable designs
+                when their customer has a different desire for the product. If they do this, their client will simply
+                find another agency that can fulfill their design wishes. They also don’t come up with proposals for
+                more sustainable solutions themselves, as they find it limiting in relation to design possibilities.
+                  The Dutch company "Endeavor" had no idea what I was talking about when I asked about digital
+                sustainability. I had to explain to them how polluting websites can be and how much focus there will be
+                on this in the future. The employees at 'Endeavour' listened uncomprehendingly, as they too worried
+                whether their customers would compromise their design in favor of sustainability. It will be exciting to
+                see how they incorporate this new knowledge into their designs in the future.
+            </p>
+        </section>
+        </div>
+
+        <!-- Jeg overvejede at benytte dark mode, men valgte at gå med en konstant bærerdygtig farve i stedet for.
+         <button onclick="changeBackgroundColor()">Dark mode</button> -->
+
+
+        <!-- Her koder jeg min nav bar -->
+        <ul class="menu">
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Sustainable websites</a></li>
+            <li><a class="menuItem" href="#">Future Web design</a></li>
+            <li><a class="menuItem" href="#">EU design</a></li>
+        </ul>
+        <button class="hamburger">
+            <!-- material icons https://material.io/resources/icons/ -->
+            <i id="menuIcon" class="material-icons">menu</i>
+            <i id="closeIcon" class="material-icons">close</i>
+        </button>
+
+        <!-- Her er en menu lavet via JQ. Jeg har fravalgt dette, da det er dårligt for miljøet. Jeg lavede den lokakalt i JS i stedet.
+
+        <div class="navbar"><img src="images/bars-solid.svg" loading="lazy" alt="Menu">
+            <p class="navItem">How to</p>
+            <p class="navItem">Smart design</p>
+            <p class="navItem">Contakt us</p>
+        </div>
 
     <script>
         $(document).ready(function(){
@@ -51,7 +102,30 @@
             });           
         
         });
-        </script>
+    </script> --->
+
+        <script src="app.js"></script>
 
 </body>
+
+<!--Nu koder jeg min footer-->
+<section class="footer">
+    <section class="Kontaktinfo">
+
+        <section id="SoMe">
+            <a href="#">
+                <img src="images/instagram.png" width="30px" height="30px">
+            </a>
+
+            <a href="#">
+                <img src="images/telephone.png" width="30px" height="30px">
+            </a>
+
+            <a href="#">
+                <img src="images/mail.png" width="30px" height="30px">
+                <a href="Mailto: bjemni@hotmail.com"></a>
+            </a>
+        </section>
+    </section>
+
 </html>
