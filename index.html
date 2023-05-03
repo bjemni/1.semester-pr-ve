@@ -12,10 +12,21 @@
 </head>
 
 <body>
+    <ul class="menu">
+        <li><a class="menuItem" href="#">Home</a></li>
+        <li><a class="menuItem" href="#">Sustainable websites</a></li>
+        <li><a class="menuItem" href="#">Future Web designers</a></li>
+        <li><a class="menuItem" href="#">Sustainability around the world</a></li>
+    </ul>
+    <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i id="menuIcon" class="material-icons">menu</i>
+        <i id="closeIcon" class="material-icons">close</i>
+    </button>
     <h1>Limit your <br> digital footprints</h1>
 
     <article class="tekst">
-        <section>
+        <section class="border_right_open">
             <h3>Sustainable websites</h3>
             <p class="test">
                 Where do you imagine all your digital data is stored? Are you aware of the pollution your website is
@@ -25,7 +36,9 @@
             </p>
         </section>
 
-        <section>
+        <img src="images/processpic.png">
+
+        <section class="border_top_right">
             <h3>Sustainability is the future</h3>
             <p class="test">
                 Research shows that we in Denmark think more and more about sustainability. In fact, we are some of the
@@ -40,7 +53,10 @@
                 with the user's pattern. Remember less is more! Show that sustainability is the new black!
             </p>
         </section>
-        <section>
+
+        <img src="images/suslogo3.png">
+
+        <section class="border_top_right_two">
             <h3>Sustainability around the world</h3>
             <p class="test">
                 I have researched European digital design companies and asked about their thoughts on digital
@@ -57,26 +73,16 @@
                 see how they incorporate this new knowledge into their designs in the future.
             </p>
         </section>
-        </div>
+    </article>
 
-        <!-- Jeg overvejede at benytte dark mode, men valgte at gå med en konstant bærerdygtig farve i stedet for.
+    <!-- Jeg overvejede at benytte dark mode, men valgte at gå med en konstant bærerdygtig farve i stedet for.
          <button onclick="changeBackgroundColor()">Dark mode</button> -->
 
 
-        <!-- Her koder jeg min nav bar -->
-        <ul class="menu">
-            <li><a class="menuItem" href="#">Home</a></li>
-            <li><a class="menuItem" href="#">Sustainable websites</a></li>
-            <li><a class="menuItem" href="#">Future Web design</a></li>
-            <li><a class="menuItem" href="#">EU design</a></li>
-        </ul>
-        <button class="hamburger">
-            <!-- material icons https://material.io/resources/icons/ -->
-            <i id="menuIcon" class="material-icons">menu</i>
-            <i id="closeIcon" class="material-icons">close</i>
-        </button>
+    <!-- Her koder jeg min nav bar -->
 
-        <!-- Her er en menu lavet via JQ. Jeg har fravalgt dette, da det er dårligt for miljøet. Jeg lavede den lokakalt i JS i stedet.
+
+    <!-- Her er en menu lavet via JQ. Jeg har fravalgt dette, da det er dårligt for miljøet. Jeg lavede den lokakalt i JS i stedet.
 
         <div class="navbar"><img src="images/bars-solid.svg" loading="lazy" alt="Menu">
             <p class="navItem">How to</p>
@@ -103,29 +109,30 @@
         
         });
     </script> --->
+    <footer>
+        <section class="Kontaktinfo">
 
-        <script src="app.js"></script>
+            <section id="SoMe">
+                <a href="#">
+                    <img src="images/instagram.png" width="30px" height="30px">
+                </a>
+
+                <a href="#">
+                    <img src="images/telephone.png" width="30px" height="30px">
+                </a>
+
+                <a href="#">
+                    <img src="images/mail.png" width="30px" height="30px">
+                    <a href="Mailto: bjemni@hotmail.com"></a>
+                </a>
+            </section>
+        </section>
+    </footer>
+    <script src="app.js"></script>
 
 </body>
 
 <!--Nu koder jeg min footer-->
-<section class="footer">
-    <section class="Kontaktinfo">
 
-        <section id="SoMe">
-            <a href="#">
-                <img src="images/instagram.png" width="30px" height="30px">
-            </a>
-
-            <a href="#">
-                <img src="images/telephone.png" width="30px" height="30px">
-            </a>
-
-            <a href="#">
-                <img src="images/mail.png" width="30px" height="30px">
-                <a href="Mailto: bjemni@hotmail.com"></a>
-            </a>
-        </section>
-    </section>
 
 </html>
